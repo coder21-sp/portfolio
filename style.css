@@ -1019,3 +1019,158 @@ form .button {
   cursor: wait;
   transform: none;
 }
+/* Larger toolkit cards, with motion kept optional. */
+#skills .skills-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+#skills .skill-group {
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  min-width: 0;
+}
+#skills .skill-group h3 {
+  font-size: 19px;
+  margin-bottom: 22px;
+}
+#skills .chips {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+#skills .technology-tile {
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  min-height: 116px;
+  padding: 16px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.4;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+#skills .technology-tile img {
+  width: 44px;
+  height: 44px;
+  padding: 5px;
+  border-radius: 8px;
+}
+#skills .technology-tile svg {
+  width: 38px;
+  height: 38px;
+}
+@media (hover: hover) {
+  #skills .technology-tile:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    background: var(--soft);
+    box-shadow: var(--shadow);
+  }
+}
+.learning-section {
+  margin-top: 40px;
+  padding: 32px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.learning-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+.learning-heading h3 {
+  font-size: 30px;
+}
+.learning-heading .eyebrow {
+  margin-bottom: 10px;
+}
+.learning-heading > p {
+  max-width: 300px;
+  font-size: 13px;
+  margin: 0;
+}
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.learning-card {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  padding: 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.learning-card > svg {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.5;
+}
+.learning-card h4 {
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+.learning-card p {
+  font-size: 13px;
+  margin: 0 0 12px;
+}
+.learning-status {
+  display: inline-block;
+  color: var(--accent);
+  background: var(--soft);
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+.projects .project-body {
+  padding: 30px;
+}
+@media (max-width: 760px) {
+  #skills .skills-grid,
+  .learning-grid {
+    grid-template-columns: 1fr;
+  }
+  #skills .skill-group {
+    padding: 22px;
+  }
+  .learning-section {
+    padding: 22px;
+  }
+  .learning-heading {
+    display: block;
+  }
+  .learning-heading > p {
+    margin-top: 16px;
+  }
+  .projects .project-body {
+    padding: 24px;
+  }
+}
+@media (max-width: 380px) {
+  #skills .chips {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .learning-card {
+    padding: 16px;
+    gap: 12px;
+  }
+}
