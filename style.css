@@ -1453,32 +1453,6 @@ footer .brand {
   font-size: 11px;
   letter-spacing: 0;
 }
-.focus-tools {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 8px;
-  padding: 0;
-  margin: 14px 0 0;
-  list-style: none;
-}
-.focus-tools li {
-  display: grid;
-  justify-items: center;
-  gap: 7px;
-  padding: 10px 4px;
-  border: 1px solid var(--line);
-  border-radius: 5px;
-  background: var(--bg);
-  font-size: 9px;
-  color: var(--muted);
-  transition:
-    border-color 0.15s,
-    background 0.15s;
-}
-.focus-tools li:hover {
-  border-color: var(--accent);
-  background: var(--soft);
-}
 .focus-project-link {
   display: flex;
   justify-content: space-between;
@@ -1675,5 +1649,77 @@ footer .brand-name {
   }
   .hero-actions .button {
     justify-content: space-between;
+  }
+}
+/* A quieter focus panel, with the rotating focus line retained. */
+.focus-panel {
+  border-radius: 12px;
+  padding: 30px;
+  transition:
+    border-color 0.18s ease,
+    transform 0.18s ease;
+}
+.focus-panel h2 {
+  font-size: 34px;
+  margin-block: 28px;
+}
+.focus-entry {
+  gap: 18px;
+}
+.focus-entry::before {
+  content: attr(data-number);
+  flex-shrink: 0;
+  padding-top: 2px;
+  color: var(--muted);
+  font:
+    10px/1.5 Consolas,
+    monospace;
+}
+.focus-stack {
+  padding-block: 24px;
+}
+.focus-stack-label {
+  display: grid;
+  gap: 10px;
+}
+.focus-stack-label .typed-text {
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 23px;
+}
+.focus-stack-label .typed-text::after {
+  content: "";
+  display: inline-block;
+  height: 13px;
+  margin-left: 4px;
+  border-right: 1px solid var(--accent);
+  vertical-align: -2px;
+}
+.focus-project-link {
+  padding-top: 20px;
+}
+@media (hover: hover) {
+  .focus-panel:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+}
+@media (max-width: 760px) {
+  .focus-panel {
+    padding: 24px;
+  }
+  .focus-panel h2 {
+    font-size: 32px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .focus-panel {
+    transition: none;
+  }
+  .focus-panel:hover {
+    transform: none;
+  }
+  .focus-stack-label .typed-text::after {
+    display: none;
   }
 }

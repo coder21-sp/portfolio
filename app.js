@@ -57,7 +57,9 @@ if (year) year.textContent = new Date().getFullYear();
 const typedText = document.querySelector(".typed-text");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 if (typedText) {
-  const words = ["React.js", "Node.js", "MongoDB", "Python"];
+  const words = typedText.dataset.words
+    ? JSON.parse(typedText.dataset.words)
+    : ["React.js", "Node.js", "MongoDB", "Python"];
   let word = 0;
   let removing = true;
   let timer;
@@ -78,8 +80,7 @@ if (typedText) {
   }
   function syncAnimation() {
     clearTimeout(timer);
-    if (reducedMotion.matches)
-      typedText.textContent = "React.js · Node.js · Python";
+    if (reducedMotion.matches) typedText.textContent = words[0];
     else {
       word = 0;
       removing = true;
