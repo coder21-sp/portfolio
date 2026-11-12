@@ -21,3 +21,11 @@ Browser smoke checks cover all three pages at 360, 390, 768, and 1440 pixels in 
 ## Visual identity
 
 The custom SP monogram is drawn with SVG paths and reused in navigation and footer. `assets/sp-monogram.svg` is the standalone artwork; `assets/favicon.svg` uses the same paths on a charcoal background for small browser-tab sizes. Both themes use neutral surfaces with a sage accent and flat 1px card borders.
+
+## Search Console and indexing
+
+Add `https://coder21-sp.github.io/portfolio/` as a **URL-prefix** property in Google Search Console. A Domain property for `github.io` is not appropriate because its DNS is not controlled by this repository. Use the HTML tag verification method and keep the exact issued tag in the homepage head after verification.
+
+After the Pages build completes, verify ownership in Search Console, submit `https://coder21-sp.github.io/portfolio/sitemap.xml`, and inspect/request indexing for the homepage. Ownership verification and sitemap submission are account actions; adding metadata alone does not complete them or guarantee indexing.
+
+The sitemap contains only the homepage and contact page. The thank-you page uses `noindex, follow`. Canonical URLs consistently use the published HTTPS project path. A project-level `/portfolio/robots.txt` cannot control crawling: robots.txt is read only at the host root, `https://coder21-sp.github.io/robots.txt`, outside this repository's Pages path.
