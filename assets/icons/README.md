@@ -1,0 +1,1 @@
+Technology icons are vendored from Devicon 2.17.0 (MIT license) and Simple Icons v16 (CC0; SAP and JSON Web Tokens). See the adjacent license files. Brand marks belong to their respective owners. REST APIs use a custom inline code symbol.

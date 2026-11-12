@@ -2,320 +2,757 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Subham Panigrahi - Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Subham Panigrahi — computer science student building full-stack web applications and machine learning projects."
     />
+    <meta name="color-scheme" content="light dark" />
+    <title>Developer Portfolio | Subham Panigrahi</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f680.svg"
-    />
+    <script src="app.js" defer></script>
   </head>
-
   <body>
-    <!-- Navbar -->
+    <a class="skip" href="#main">Skip to content</a>
     <header>
-      <nav class="navbar" aria-label="Main navigation">
-        <a href="#home" class="logo">Subham Panigrahi</a>
-        <ul class="nav-links">
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="index.html#work">Work</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#skills">Skills</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <button class="theme-toggle" id="themeToggle" aria-label="Theme Toggle">
-          🌙
-        </button>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+      <nav class="container navbar" aria-label="Main navigation">
+        <a class="brand" href="index.html"
+          ><span class="monogram">sp<span>.</span></span
+          ><span>Subham Panigrahi</span></a
+        >
+        <div class="nav-links" id="navigation">
+          <a href="index.html#work">Work</a><a href="index.html#about">About</a
+          ><a href="index.html#experience">Experience</a
+          ><a href="contact.html"
+            >Contact
+            <span
+              ><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19 19 5M5 5h14v14" /></svg></span
+          ></a>
+        </div>
+        <div class="nav-actions">
+          <button
+            id="themeToggle"
+            class="icon-button"
+            aria-label="Switch color theme"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 15.5A9 9 0 0 1 8.5 4 9 9 0 1 0 20 15.5Z" />
+            </svg></button
+          ><button
+            id="menuToggle"
+            class="icon-button menu-toggle"
+            aria-expanded="false"
+            aria-controls="navigation"
+            aria-label="Toggle navigation"
+          >
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
       </nav>
     </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="hero-text">
-        <h1>Subham Panigrahi</h1>
-        <p class="subtitle">MERN Stack Developer</p>
-        <a href="#work" class="btn-primary" aria-label="View my work portfolio"
-          >View My Work</a
-        >
-        <a href="contact.html" class="btn-primary" aria-label="Get in touch"
-          >Get in Touch</a
-        >
-        <a href="#" class="btn-primary" aria-label="Download Resume" download
-          >Download Resume</a
-        >
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/subham-panigrahi-863255291/" aria-label="LinkedIn"
-            ><img
-              src="https://img.icons8.com/color/48/000000/linkedin.png"
-              alt="LinkedIn"
-          /></a>
-          <a href="https://github.com/coder21-sp" aria-label="GitHub"
-            ><img
-              src="https://img.icons8.com/color/48/000000/github.png"
-              alt="GitHub"
-          /></a>
-          <a href="https://x.com/SubhamP49653065" aria-label="Twitter"
-            ><img
-              src="https://img.icons8.com/color/48/000000/twitter.png"
-              alt="Twitter"
-          /></a>
-          <a href="#" aria-label="Discord"
-            ><img
-              src="https://img.icons8.com/color/48/000000/discord-new-logo.png"
-              alt="Discord"
-          /></a>
+    <main id="main">
+      <section class="container hero">
+        <div>
+          <p class="eyebrow">
+            <span class="dot"></span> DEVELOPER · COMPUTER SCIENCE STUDENT
+          </p>
+          <h1>
+            Thoughtful code.<br /><span class="serif">Useful experiences.</span>
+          </h1>
+          <p class="hero-intro">
+            Hi, I’m <strong>Subham Panigrahi.</strong> I build full-stack web
+            applications and explore machine learning, turning ideas into
+            practical, responsive software.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work"
+              >Explore my work
+              <span
+                ><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 5l14 14M5 19h14V5" /></svg></span></a
+            ><a
+              class="button"
+              href="assets/Subham-Panigrahi-Resume.pdf"
+              download
+              >Download résumé
+              <span
+                ><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3v18m-7-7 7 7 7-7" /></svg></span
+            ></a>
+          </div>
+          <p class="hero-note">
+            B.Tech, Computer Science & Engineering <span> / </span> Class of
+            2027
+          </p>
         </div>
-        <div class="tech-skills">
-          <h4>Tech Stack</h4>
-          <ul class="skills-list">
-            <li><i class="fab fa-react"></i> React</li>
-            <li><i class="fab fa-node-js"></i> Node.js</li>
-            <li><i class="fas fa-database"></i> MongoDB</li>
-            <li><i class="fas fa-code"></i> Express.js</li>
+        <aside class="profile-card">
+          <div class="card-top">
+            <span class="eyebrow">A LITTLE ABOUT ME</span
+            ><span class="accent"
+              ><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19 19 5M5 5h14v14" /></svg
+            ></span>
+          </div>
+          <div class="profile-monogram" aria-hidden="true">
+            sp<span>.</span>
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+          </div>
+          <p class="profile-label">Building with</p>
+          <p class="typed-line">
+            <span class="typed-text">React.js</span
+            ><span class="cursor" aria-hidden="true">|</span>
+          </p>
+          <div class="profile-bottom">
+            <span
+              >Full-stack development<br /><strong
+                >MERN & machine learning</strong
+              ></span
+            ><span class="small-mark">&lt;/&gt;</span>
+          </div>
+        </aside>
+      </section>
+      <div class="container intro-strip">
+        <span>WEB DEVELOPMENT</span><span>BACKEND SYSTEMS</span
+        ><span>MACHINE LEARNING</span><span>OPEN SOURCE</span>
+      </div>
+      <section class="container section" id="work">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / SELECTED WORK</p>
+            <h2>Learning by <span class="serif">building.</span></h2>
+          </div>
+          <p>
+            Three projects across intelligent applications,<br />content
+            systems, and scheduling.
+          </p>
+        </div>
+        <div class="projects">
+          <article class="project">
+            <div class="project-art art-01">
+              <span class="eyebrow">Machine learning · 2025</span>
+              <div class="model-bars">
+                <span style="--w: 86.32%">Gradient Boosting <b>86.32%</b></span
+                ><span style="--w: 66%">6 classification models</span
+                ><span style="--w: 48%">~48K census records</span>
+              </div>
+              <span class="art-caption"
+                >AI-Powered Salary Predictor / project overview</span
+              >
+            </div>
+            <div class="project-body">
+              <div class="project-title">
+                <h3>AI-Powered Salary Predictor</h3>
+                <span>01</span>
+              </div>
+              <p class="project-sub">From census data to income insights.</p>
+              <p>
+                A machine learning application built on the UCI Adult Census
+                dataset (~48K records). Trained and evaluated six classification
+                models, reaching 86.32% accuracy with Gradient Boosting. An
+                interactive Streamlit interface supports real-time predictions
+                and model testing.
+              </p>
+              <div class="chips">
+                <span class="chip"
+                  ><img
+                    src="assets/icons/python.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                    loading="lazy"
+                  />Python</span
+                ><span class="chip"
+                  ><img
+                    src="assets/icons/scikitlearn.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                    loading="lazy"
+                  />Scikit-learn</span
+                ><span class="chip"
+                  ><img
+                    src="assets/icons/pandas.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                    loading="lazy"
+                  />Pandas</span
+                ><span class="chip"
+                  ><img
+                    src="assets/icons/numpy.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                    loading="lazy"
+                  />NumPy</span
+                ><span class="chip"
+                  ><img
+                    src="assets/icons/streamlit.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                    loading="lazy"
+                  />Streamlit</span
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-art art-02">
+              <span class="eyebrow">Backend development</span>
+              <div class="api-lines">
+                <span><b>GET</b> /posts</span><span><b>POST</b> /auth</span
+                ><span><b>PATCH</b> /categories</span>
+              </div>
+              <span class="art-caption"
+                >ScribeBoard API / project overview</span
+              >
+            </div>
+            <div class="project-body">
+              <div class="project-title">
+                <h3>ScribeBoard API</h3>
+                <span>02</span>
+              </div>
+              <p class="project-sub">A structured foundation for publishing.</p>
+              <p>
+                A RESTful blog CMS backend for posts, categories, and users.
+                Implements CRUD operations, JWT-based authentication, role-based
+                access control, and MongoDB integration.
+              </p>
+              <div class="chips">
+                <span class="chip"
+                  ><img
+                    src="assets/icons/nodejs.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                    loading="lazy"
+                  />Node.js</span
+                ><span class="chip"
+                  ><img
+                    src="assets/icons/express.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                    loading="lazy"
+                  />Express.js</span
+                ><span class="chip"
+                  ><img
+                    src="assets/icons/mongodb.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                    loading="lazy"
+                  />MongoDB</span
+                ><span class="chip"
+                  ><img
+                    src="assets/icons/jwt.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                    loading="lazy"
+                  />JWT</span
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-art art-03">
+              <span class="eyebrow">Backend development</span>
+              <div class="calendar-art" aria-hidden="true">
+                <span class="">1</span><span class="">2</span
+                ><span class="">3</span><span class="selected">4</span
+                ><span class="">5</span><span class="">6</span
+                ><span class="">7</span><span class="selected">8</span
+                ><span class="selected">9</span><span class="">10</span
+                ><span class="">11</span><span class="">12</span
+                ><span class="">13</span><span class="">14</span
+                ><span class="selected">15</span><span class="">16</span
+                ><span class="">17</span><span class="">18</span
+                ><span class="">19</span><span class="">20</span
+                ><span class="">21</span>
+              </div>
+              <span class="art-caption">QuickSlot / project overview</span>
+            </div>
+            <div class="project-body">
+              <div class="project-title">
+                <h3>QuickSlot</h3>
+                <span>03</span>
+              </div>
+              <p class="project-sub">Making time for better scheduling.</p>
+              <p>
+                A booking and calendar management system with REST APIs for
+                appointment creation, updates, and cancellations. Designed
+                availability management and efficient slot allocation workflows.
+              </p>
+              <div class="chips">
+                <span class="chip"
+                  ><img
+                    src="assets/icons/nodejs.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                    loading="lazy"
+                  />Node.js</span
+                ><span class="chip"
+                  ><img
+                    src="assets/icons/express.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                    loading="lazy"
+                  />Express.js</span
+                ><span class="chip"
+                  ><img
+                    src="assets/icons/mongodb.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                    loading="lazy"
+                  />MongoDB</span
+                ><span class="chip"
+                  ><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m8 5-7 7 7 7m8-14 7 7-7 7M14 3l-4 18" /></svg
+                  >REST APIs</span
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="about-section" id="about">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">02 / ABOUT ME</p>
+            <h2>
+              Curiosity drives<br />the <span class="serif">next commit.</span>
+            </h2>
+          </div>
+          <div>
+            <p class="lead">
+              I’m a Computer Science & Engineering student at Silicon Institute
+              of Technology, Sambalpur, with a focus on full-stack development
+              and a growing interest in AI.
+            </p>
+            <p>
+              My experience spans building MERN features at CodeBeat, studying
+              AI and machine learning through an IBM-backed internship, and
+              exploring industrial technology at Rourkela Steel Plant. I enjoy
+              connecting fundamentals with practical projects and contributing
+              to open source.
+            </p>
+            <div class="facts">
+              <div>
+                <strong>8.33<span>/10</span></strong
+                ><span>B.Tech CGPA</span>
+              </div>
+              <div><strong>2027</strong><span>Expected graduation</span></div>
+              <div><strong>3</strong><span>Internship experiences</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container section" id="skills">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 / THE TOOLKIT</p>
+            <h2>Tools behind <span class="serif">the work.</span></h2>
+          </div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <div class="chips">
+              <span class="chip"
+                ><img
+                  src="assets/icons/java.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />Java</span
+              ><span class="chip"
+                ><img
+                  src="assets/icons/javascript.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />JavaScript</span
+              ><span class="chip"
+                ><img
+                  src="assets/icons/c.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />C</span
+              ><span class="chip"
+                ><img
+                  src="assets/icons/html5.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />HTML5</span
+              ><span class="chip"
+                ><img
+                  src="assets/icons/css3.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />CSS3</span
+              ><span class="chip"
+                ><img
+                  src="assets/icons/python.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />Python</span
+              >
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Frontend</h3>
+            <div class="chips">
+              <span class="chip"
+                ><img
+                  src="assets/icons/react.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />React.js</span
+              ><span class="chip"
+                ><img
+                  src="assets/icons/tailwindcss.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />Tailwind CSS</span
+              ><span class="chip"
+                ><img
+                  src="assets/icons/bootstrap.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />Bootstrap</span
+              >
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Backend & data</h3>
+            <div class="chips">
+              <span class="chip"
+                ><img
+                  src="assets/icons/nodejs.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />Node.js</span
+              ><span class="chip"
+                ><img
+                  src="assets/icons/express.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />Express.js</span
+              ><span class="chip"
+                ><img
+                  src="assets/icons/mongodb.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />MongoDB</span
+              ><span class="chip"
+                ><img
+                  src="assets/icons/jwt.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />JWT</span
+              ><span class="chip"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m8 5-7 7 7 7m8-14 7 7-7 7M14 3l-4 18" /></svg
+                >REST APIs</span
+              >
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Machine learning</h3>
+            <div class="chips">
+              <span class="chip"
+                ><img
+                  src="assets/icons/scikitlearn.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />Scikit-learn</span
+              ><span class="chip"
+                ><img
+                  src="assets/icons/pandas.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />Pandas</span
+              ><span class="chip"
+                ><img
+                  src="assets/icons/numpy.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />NumPy</span
+              ><span class="chip"
+                ><img
+                  src="assets/icons/streamlit.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />Streamlit</span
+              >
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Developer tools</h3>
+            <div class="chips">
+              <span class="chip"
+                ><img
+                  src="assets/icons/git.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />Git</span
+              ><span class="chip"
+                ><img
+                  src="assets/icons/github.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />GitHub</span
+              ><span class="chip"
+                ><img
+                  src="assets/icons/vscode.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />VS Code</span
+              ><span class="chip"
+                ><img
+                  src="assets/icons/postman.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />Postman</span
+              >
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Industry exposure</h3>
+            <div class="chips">
+              <span class="chip"
+                ><img
+                  src="assets/icons/sap.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                />SAP ERP</span
+              >
+            </div>
+          </div>
+        </div>
+        <p class="concepts">
+          <strong>Foundations & concepts</strong> Object-oriented programming ·
+          DBMS · Computer Networks · Artificial Intelligence · Blockchain
+          fundamentals · Data preprocessing · Model training
+        </p>
+      </section>
+      <section class="container section" id="experience">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">04 / EXPERIENCE</p>
+            <h2>Learning in <span class="serif">practice.</span></h2>
+          </div>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <p class="eyebrow">June – July 2026</p>
+            <div>
+              <h3>Vocational Training (C&IT)</h3>
+              <p class="organization">Rourkela Steel Plant</p>
+              <ul>
+                <li>
+                  Introductory sessions on Artificial Intelligence, Blockchain
+                  fundamentals, and SAP ERP basics.
+                </li>
+                <li>
+                  Industrial safety practices, workplace hazards, safety
+                  protocols, and relevant acts and regulations in steel
+                  manufacturing.
+                </li>
+                <li>
+                  Orientation in professional ethics, workplace etiquette,
+                  organizational culture, communication, and responsible
+                  corporate conduct.
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <p class="eyebrow">June – July 2025</p>
+            <div>
+              <h3>MERN Stack Developer Intern</h3>
+              <p class="organization">
+                CodeBeat · Silicon University, Bhubaneswar
+              </p>
+              <ul>
+                <li>
+                  Built end-to-end web features using MongoDB, Express.js,
+                  React.js, and Node.js.
+                </li>
+                <li>
+                  Developed responsive React components and implemented state
+                  management for dynamic interfaces.
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <p class="eyebrow">July 2025</p>
+            <div>
+              <h3>Artificial Intelligence Virtual Intern</h3>
+              <p class="organization">
+                Edunet Foundation · IBM-backed AI / Machine Learning internship
+                · Remote
+              </p>
+              <ul>
+                <li>
+                  Covered AI fundamentals, data preprocessing, and model
+                  training.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="container section credentials">
+        <div>
+          <p class="eyebrow">05 / EDUCATION</p>
+          <h2>A strong <span class="serif">foundation.</span></h2>
+          <article class="education">
+            <span class="eyebrow">JUL 2023 – JUN 2027 · EXPECTED</span>
+            <h3>B.Tech · Computer Science & Engineering</h3>
+            <p>Silicon Institute of Technology, Sambalpur</p>
+            <p>Odisha, India · CGPA: <strong>8.33 / 10.0</strong></p>
+          </article>
+          <article class="education">
+            <span class="eyebrow">2023</span>
+            <h3>Class XII · ISC</h3>
+            <p>MGM English School, Rourkela · Odisha, India</p>
+            <p>79.33%</p>
+          </article>
+          <article class="education">
+            <span class="eyebrow">2021</span>
+            <h3>Class X · ICSE</h3>
+            <p>MGM English School, Rourkela · Odisha, India</p>
+            <p>91.17%</p>
+          </article>
+        </div>
+        <div>
+          <p class="eyebrow">06 / BEYOND THE CLASSROOM</p>
+          <h2>Progress & <span class="serif">recognition.</span></h2>
+          <h3 class="subheading">Certifications</h3>
+          <ul class="recognition">
+            <li>
+              <strong>Programming in Java</strong><span>SWAYAM NPTEL</span>
+            </li>
+            <li>
+              <strong>Database Management Systems</strong
+              ><span>SWAYAM NPTEL</span>
+            </li>
+            <li>
+              <strong>IBM AI & Machine Learning Virtual Internship</strong
+              ><span>Edunet Foundation & IBM SkillsBuild · 2025</span>
+            </li>
+          </ul>
+          <h3 class="subheading">Honors & awards</h3>
+          <ul class="recognition">
+            <li>
+              <strong>2nd Runner-Up · Burla Hackathon, VSSUT</strong
+              ><span
+                >Developed and presented a technology solution in an
+                inter-college hackathon.</span
+              >
+            </li>
+            <li>
+              <strong>GirlScript Summer of Code</strong
+              ><span
+                >Open source contributor, GSSoC 2025 · Selected participant,
+                GSSoC 2026.</span
+              >
+            </li>
+            <li>
+              <strong>Google Virtual Program</strong
+              ><span
+                >Completed the program on Cloud and Emerging Technologies ·
+                2025.</span
+              >
+            </li>
           </ul>
         </div>
-      </div>
-      <div class="hero-features">
-        <div class="tech-stack-section">
-          <h3>Tech Stack</h3>
-          <div class="tech-icons-grid">
-            <div class="tech-icon">
-              <i class="fab fa-react"></i>
-              <span>React</span>
-            </div>
-            <div class="tech-icon">
-              <i class="fab fa-node-js"></i>
-              <span>Node.js</span>
-            </div>
-            <div class="tech-icon">
-              <i class="fas fa-leaf"></i>
-              <span>MongoDB</span>
-            </div>
-            <div class="tech-icon">
-              <i class="fas fa-code"></i>
-              <span>Express</span>
-            </div>
-            <div class="tech-icon">
-              <i class="fab fa-java"></i>
-              <span>Java</span>
-            </div>
-            <div class="tech-icon">
-              <i class="fab fa-js-square"></i>
-              <span>JavaScript</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="info-cards">
-          <div class="info-card">
-            <div class="card-icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <h4>Full Stack Development</h4>
-            <p>Building end-to-end web applications with modern technologies</p>
-          </div>
-          <div class="info-card">
-            <div class="card-icon">
-              <i class="fas fa-lightbulb"></i>
-            </div>
-            <h4>Problem Solving</h4>
-            <p>Crafting efficient solutions to complex technical challenges</p>
-          </div>
-          <div class="info-card">
-            <div class="card-icon">
-              <i class="fas fa-users"></i>
-            </div>
-            <h4>Team Collaboration</h4>
-            <p>Working seamlessly with teams to deliver quality projects</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recent Works -->
-    <section id="work" class="recent-works">
-      <h2>Recent Works</h2>
-      <div class="work-grid">
-        <div class="work-card">
-          <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
-            alt="Restaurant Website"
-          />
-          <div class="overlay">
-            <h3>Restaurant Website</h3>
-            <div class="buttons">
-              <a
-                href="#"
-                class="btn"
-                aria-label="View live demo of Restaurant Website"
-                >Live Demo</a
-              >
-              <a
-                href="#"
-                class="btn-outline"
-                aria-label="View code of Restaurant Website"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="work-card">
-          <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
-            alt="Restaurant Website"
-          />
-          <div class="overlay">
-            <h3>Product Design</h3>
-            <div class="buttons">
-              <a
-                href="#"
-                class="btn"
-                aria-label="View live demo of Product Design"
-                >Live Demo</a
-              >
-              <a
-                href="#"
-                class="btn-outline"
-                aria-label="View code of Product Design"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="work-card">
-          <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
-            alt="Restaurant Website"
-          />
-          <div class="overlay">
-            <h3>SEO Dashboard</h3>
-            <div class="buttons">
-              <a
-                href="#"
-                class="btn"
-                aria-label="View live demo of SEO Dashboard"
-                >Live Demo</a
-              >
-              <a
-                href="#"
-                class="btn-outline"
-                aria-label="View code of SEO Dashboard"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="work-card">
-          <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
-            alt="Restaurant Website"
-          />
-          <div class="overlay">
-            <h3>Panel Design</h3>
-            <div class="buttons">
-              <a
-                href="#"
-                class="btn"
-                aria-label="View live demo of Panel Design"
-                >Live Demo</a
-              >
-              <a
-                href="#"
-                class="btn-outline"
-                aria-label="View code of Panel Design"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
+      </section>
+      <section class="container cta">
+        <p class="eyebrow">LET’S CONNECT</p>
+        <h2>Have something <span class="serif">in mind?</span></h2>
+        <p>
+          Let’s talk about development, interesting ideas, or working together.
+        </p>
+        <a href="contact.html" class="button primary"
+          >Start a conversation
+          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 19 19 5M5 5h14v14" /></svg
+        ></a>
+      </section>
+    </main>
+    <footer class="container">
+      <a class="brand" href="index.html">sp<span class="accent">.</span></a>
+      <p>© <span id="year">2026</span> Subham Panigrahi</p>
+      <div>
+        <a href="https://github.com/coder21-sp"
+          >GitHub
+          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 19 19 5M5 5h14v14" /></svg></a
+        ><a href="https://www.linkedin.com/in/subham-panigrahi28/"
+          >LinkedIn
+          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 19 19 5M5 5h14v14" /></svg></a
+        ><a href="mailto:subhampanigrahi2004@gmail.com"
+          >Email
+          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 19 19 5M5 5h14v14" /></svg
+        ></a>
       </div>
     </footer>
-
-    <!-- About Me Section -->
-    <section id="about" class="about">
-      <h2>About Me</h2>
-      <div class="about-container">
-        <div class="about-text">
-          <p>
-            I'm Subham Panigrahi, a passionate Full Stack MERN developer with a strong foundation in building scalable web applications. With expertise in React, Node.js, Express, and MongoDB, I create robust and user-friendly solutions that solve real-world problems.
-          </p>
-          <p>
-            I love collaborating with teams, solving complex challenges, and continuously learning new technologies. My focus is on writing clean, efficient code and delivering exceptional user experiences.
-          </p>
-          <p>
-            When I'm not coding, you can find me exploring new tech trends, contributing to open-source projects, or sharing knowledge with the developer community.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-      <h2>Skills & Expertise</h2>
-      <div class="skills-container">
-        <div class="skill-category">
-          <h3>Frontend Development</h3>
-          <ul class="skill-list">
-            <li><i class="fab fa-react"></i> React.js</li>
-            <li><i class="fab fa-js-square"></i> JavaScript (ES6+)</li>
-            <li><i class="fab fa-html5"></i> HTML5 & CSS3</li>
-            <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
-            <li><i class="fas fa-cube"></i> Redux/Context API</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Backend Development</h3>
-          <ul class="skill-list">
-            <li><i class="fab fa-node-js"></i> Node.js</li>
-            <li><i class="fab fa-java"></i> Java</li>
-            <li><i class="fas fa-code"></i> Express.js</li>
-            <li><i class="fas fa-exchange-alt"></i> REST APIs</li>
-            <li><i class="fas fa-lock"></i> Authentication & Authorization</li>
-            <li><i class="fas fa-server"></i> Server Management</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Database & Tools</h3>
-          <ul class="skill-list">
-            <li><i class="fas fa-leaf"></i> MongoDB</li>
-            <li><i class="fab fa-github"></i> Git & GitHub</li>
-            <li><i class="fas fa-bug"></i> Postman</li>
-            <li><i class="fas fa-code"></i> VS Code</li>
-            <li><i class="fab fa-npm"></i> NPM/Yarn</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-container">
-        <p>&copy; 2026 Subham Panigrahi. All rights reserved.</p>
-        <div class="footer-links">
-          <a href="index.html#home">Home</a>
-          <a href="index.html#work">Work</a>
-          <a href="index.html#skills">Skills</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </div>
-    </footer>
-
-    <script src="app.js"></script>
   </body>
 </html>

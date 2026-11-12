@@ -2,94 +2,110 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thank You - Subham Panigrahi</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Subham Panigrahi — computer science student building full-stack web applications and machine learning projects."
     />
+    <meta name="color-scheme" content="light dark" />
+    <title>Thank You | Subham Panigrahi</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f680.svg"
-    />
+    <script src="app.js" defer></script>
   </head>
-
   <body>
+    <a class="skip" href="#main">Skip to content</a>
     <header>
-      <nav class="navbar" aria-label="Main navigation">
-        <a href="index.html#home" class="logo">Subham Panigrahi</a>
-        <ul class="nav-links">
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="index.html#work">Work</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#skills">Skills</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <button class="theme-toggle" id="themeToggle" aria-label="Theme Toggle">
-          🌙
-        </button>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+      <nav class="container navbar" aria-label="Main navigation">
+        <a class="brand" href="index.html"
+          ><span class="monogram">sp<span>.</span></span
+          ><span>Subham Panigrahi</span></a
+        >
+        <div class="nav-links" id="navigation">
+          <a href="index.html#work">Work</a><a href="index.html#about">About</a
+          ><a href="index.html#experience">Experience</a
+          ><a href="contact.html"
+            >Contact
+            <span
+              ><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19 19 5M5 5h14v14" /></svg></span
+          ></a>
+        </div>
+        <div class="nav-actions">
+          <button
+            id="themeToggle"
+            class="icon-button"
+            aria-label="Switch color theme"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 15.5A9 9 0 0 1 8.5 4 9 9 0 1 0 20 15.5Z" />
+            </svg></button
+          ><button
+            id="menuToggle"
+            class="icon-button menu-toggle"
+            aria-expanded="false"
+            aria-controls="navigation"
+            aria-label="Toggle navigation"
+          >
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
       </nav>
     </header>
-
-    <section class="contact-hero">
-      <div class="contact-hero-inner">
-        <div class="contact-hero-content">
-          <h1>Thank You!</h1>
-          <p>
-            Your message has been sent successfully. I will review it and get
-            back to you as soon as possible.
-          </p>
-          <div class="contact-hero-actions">
-            <a href="index.html#home" class="btn-primary" aria-label="Back home"
-              >Back to Home</a
+    <main id="main">
+      <section class="container thanks">
+        <div class="success-icon" aria-hidden="true">
+          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m5 12 4 4L19 6" />
+          </svg>
+        </div>
+        <p class="eyebrow">THANK YOU FOR REACHING OUT</p>
+        <h1>
+          Message sent.<br /><span class="serif">Conversation started.</span>
+        </h1>
+        <p class="lead">
+          Thanks for getting in touch. I’ll read your message and respond to the
+          email address you shared.
+        </p>
+        <div class="hero-actions">
+          <a href="index.html#work" class="button primary"
+            >Explore my work
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 19 19 5M5 5h14v14" /></svg></a
+          ><a href="contact.html" class="button">Send another message</a>
+        </div>
+        <div class="thanks-note">
+          <span class="monogram">sp<span>.</span></span>
+          <div>
+            <strong>Subham Panigrahi</strong>
+            <p>Full-stack development & machine learning</p>
+            <a href="mailto:subhampanigrahi2004@gmail.com"
+              >subhampanigrahi2004@gmail.com</a
             >
-            <a href="contact.html" class="btn-outline" aria-label="Send another"
-              >Send Another</a
-            >
           </div>
         </div>
-        <div class="contact-hero-cards">
-          <div class="hero-card">
-            <i class="fas fa-envelope"></i>
-            <h3>Message Received</h3>
-            <p>Thank you for reaching out</p>
-          </div>
-          <div class="hero-card">
-            <i class="fas fa-clock"></i>
-            <h3>Response Time</h3>
-            <p>Within 24 hours</p>
-          </div>
-          <div class="hero-card">
-            <i class="fas fa-rocket"></i>
-            <h3>Next Step</h3>
-            <p>Lets build something great</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-container">
-        <p>&copy; 2026 Subham Panigrahi. All rights reserved.</p>
-        <div class="footer-links">
-          <a href="index.html#home">Home</a>
-          <a href="index.html#work">Work</a>
-          <a href="index.html#skills">Skills</a>
-          <a href="contact.html">Contact</a>
-        </div>
+      </section>
+    </main>
+    <footer class="container">
+      <a class="brand" href="index.html">sp<span class="accent">.</span></a>
+      <p>© <span id="year">2026</span> Subham Panigrahi</p>
+      <div>
+        <a href="https://github.com/coder21-sp"
+          >GitHub
+          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 19 19 5M5 5h14v14" /></svg></a
+        ><a href="https://www.linkedin.com/in/subham-panigrahi28/"
+          >LinkedIn
+          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 19 19 5M5 5h14v14" /></svg></a
+        ><a href="mailto:subhampanigrahi2004@gmail.com"
+          >Email
+          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 19 19 5M5 5h14v14" /></svg
+        ></a>
       </div>
     </footer>
-
-    <script src="app.js"></script>
   </body>
 </html>
