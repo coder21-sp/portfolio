@@ -134,3 +134,30 @@ if (contactForm) {
     }
   });
 }
+
+const toolkitStage = document.querySelector(".toolkit-stage");
+const toolkitMotion = document.getElementById("toolkitMotion");
+if (toolkitStage && toolkitMotion) {
+  // Two identical groups make the animation's halfway point a seamless loop.
+  toolkitStage.querySelectorAll(".tech-track").forEach((track) => {
+    const copy = track.querySelector(".tech-group").cloneNode(true);
+    copy.setAttribute("aria-hidden", "true");
+    copy.setAttribute("inert", "");
+    track.append(copy);
+  });
+  toolkitStage.classList.add("is-animated");
+  toolkitMotion.hidden = reducedMotion.matches;
+  reducedMotion.addEventListener("change", (event) => {
+    toolkitMotion.hidden = event.matches;
+  });
+  toolkitMotion.addEventListener("click", () => {
+    const paused = toolkitStage.classList.toggle("is-paused");
+    toolkitMotion.setAttribute("aria-pressed", String(paused));
+    toolkitMotion.querySelector("span").textContent = paused
+      ? "Resume motion"
+      : "Pause motion";
+    toolkitMotion
+      .querySelector("path")
+      .setAttribute("d", paused ? "m8 5 11 7-11 7Z" : "M9 5v14M15 5v14");
+  });
+}
