@@ -1,25 +1,37 @@
 <!doctype html>
+
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta
-      name="description"
       content="Subham Panigrahi — computer science student building full-stack web applications and machine learning projects."
+      name="description"
     />
-    <meta name="color-scheme" content="light dark" />
+    <meta content="light dark" name="color-scheme" />
     <title>Thank You | Subham Panigrahi</title>
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
+    <link href="assets/favicon.svg?v=2" rel="icon" type="image/svg+xml" />
+    <link href="style.css" rel="stylesheet" />
+    <script defer="" src="app.js"></script>
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <header>
-      <nav class="container navbar" aria-label="Main navigation">
-        <a class="brand" href="index.html"
-          ><span class="monogram">sp<span>.</span></span
-          ><span>Subham Panigrahi</span></a
+      <nav aria-label="Main navigation" class="container navbar">
+        <a aria-label="Subham Panigrahi — home" class="brand" href="index.html"
+          ><svg
+            aria-hidden="true"
+            class="brand-mark"
+            fill="none"
+            stroke="currentColor"
+            stroke-linejoin="miter"
+            stroke-width="2.6"
+            viewBox="0 0 50 40"
+          >
+            <path
+              d="M21 6H9l-4 4v6l4 4h8l4 4v6l-4 4H5M29 34V6h10l5 5v8l-5 5H29"
+            ></path></svg
+          ><span class="brand-name">Subham Panigrahi</span></a
         >
         <div class="nav-links" id="navigation">
           <a href="index.html#work">Work</a><a href="index.html#about">About</a
@@ -27,28 +39,28 @@
           ><a href="contact.html"
             >Contact
             <span
-              ><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M5 19 19 5M5 5h14v14" /></svg></span
+              ><svg aria-hidden="true" class="ui-icon" viewBox="0 0 24 24">
+                <path d="M5 19 19 5M5 5h14v14"></path></svg></span
           ></a>
         </div>
         <div class="nav-actions">
           <button
-            id="themeToggle"
-            class="icon-button"
             aria-label="Switch color theme"
+            class="icon-button"
+            id="themeToggle"
           >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20 15.5A9 9 0 0 1 8.5 4 9 9 0 1 0 20 15.5Z" />
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M20 15.5A9 9 0 0 1 8.5 4 9 9 0 1 0 20 15.5Z"></path>
             </svg></button
           ><button
-            id="menuToggle"
-            class="icon-button menu-toggle"
-            aria-expanded="false"
             aria-controls="navigation"
+            aria-expanded="false"
             aria-label="Toggle navigation"
+            class="icon-button menu-toggle"
+            id="menuToggle"
           >
-            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M4 6h16M4 12h16M4 18h16" />
+            <svg aria-hidden="true" class="ui-icon" viewBox="0 0 24 24">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
         </div>
@@ -56,9 +68,9 @@
     </header>
     <main id="main">
       <section class="container thanks">
-        <div class="success-icon" aria-hidden="true">
-          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="m5 12 4 4L19 6" />
+        <div aria-hidden="true" class="success-icon">
+          <svg aria-hidden="true" class="ui-icon" viewBox="0 0 24 24">
+            <path d="m5 12 4 4L19 6"></path>
           </svg>
         </div>
         <p class="eyebrow">THANK YOU FOR REACHING OUT</p>
@@ -70,17 +82,29 @@
           email address you shared.
         </p>
         <div class="hero-actions">
-          <a href="index.html#work" class="button primary"
+          <a class="button primary" href="index.html#work"
             >Explore my work
-            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M5 19 19 5M5 5h14v14" /></svg></a
-          ><a href="contact.html" class="button">Send another message</a>
+            <svg aria-hidden="true" class="ui-icon" viewBox="0 0 24 24">
+              <path d="M5 19 19 5M5 5h14v14"></path></svg></a
+          ><a class="button" href="contact.html">Send another message</a>
         </div>
         <div class="thanks-note">
-          <span class="monogram">sp<span>.</span></span>
+          <svg
+            aria-hidden="true"
+            class="brand-mark"
+            fill="none"
+            stroke="currentColor"
+            stroke-linejoin="miter"
+            stroke-width="2.6"
+            viewBox="0 0 50 40"
+          >
+            <path
+              d="M21 6H9l-4 4v6l4 4h8l4 4v6l-4 4H5M29 34V6h10l5 5v8l-5 5H29"
+            ></path>
+          </svg>
           <div>
             <strong>Subham Panigrahi</strong>
-            <p>Full-stack development & machine learning</p>
+            <p>Full-stack development &amp; machine learning</p>
             <a href="mailto:subhampanigrahi2004@gmail.com"
               >subhampanigrahi2004@gmail.com</a
             >
@@ -89,21 +113,35 @@
       </section>
     </main>
     <footer class="container">
-      <a class="brand" href="index.html">sp<span class="accent">.</span></a>
-      <p>© <span id="year">2026</span> Subham Panigrahi</p>
+      <a aria-label="Subham Panigrahi — home" class="brand" href="index.html"
+        ><svg
+          aria-hidden="true"
+          class="brand-mark"
+          fill="none"
+          stroke="currentColor"
+          stroke-linejoin="miter"
+          stroke-width="2.6"
+          viewBox="0 0 50 40"
+        >
+          <path
+            d="M21 6H9l-4 4v6l4 4h8l4 4v6l-4 4H5M29 34V6h10l5 5v8l-5 5H29"
+          ></path></svg
+        ><span class="brand-name">Subham Panigrahi</span></a
+      >
+      <p>© <span id="year">2026</span></p>
       <div>
         <a href="https://github.com/coder21-sp"
           >GitHub
-          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M5 19 19 5M5 5h14v14" /></svg></a
+          <svg aria-hidden="true" class="ui-icon" viewBox="0 0 24 24">
+            <path d="M5 19 19 5M5 5h14v14"></path></svg></a
         ><a href="https://www.linkedin.com/in/subham-panigrahi28/"
           >LinkedIn
-          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M5 19 19 5M5 5h14v14" /></svg></a
+          <svg aria-hidden="true" class="ui-icon" viewBox="0 0 24 24">
+            <path d="M5 19 19 5M5 5h14v14"></path></svg></a
         ><a href="mailto:subhampanigrahi2004@gmail.com"
           >Email
-          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M5 19 19 5M5 5h14v14" /></svg
+          <svg aria-hidden="true" class="ui-icon" viewBox="0 0 24 24">
+            <path d="M5 19 19 5M5 5h14v14"></path></svg
         ></a>
       </div>
     </footer>

@@ -10,7 +10,7 @@
     />
     <meta content="light dark" name="color-scheme" />
     <title>Developer Portfolio | Subham Panigrahi</title>
-    <link href="assets/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="assets/favicon.svg?v=2" rel="icon" type="image/svg+xml" />
     <link href="style.css" rel="stylesheet" />
     <script defer="" src="app.js"></script>
   </head>
@@ -18,9 +18,20 @@
     <a class="skip" href="#main">Skip to content</a>
     <header>
       <nav aria-label="Main navigation" class="container navbar">
-        <a class="brand" href="index.html"
-          ><span class="monogram">sp<span>.</span></span
-          ><span>Subham Panigrahi</span></a
+        <a aria-label="Subham Panigrahi — home" class="brand" href="index.html"
+          ><svg
+            aria-hidden="true"
+            class="brand-mark"
+            fill="none"
+            stroke="currentColor"
+            stroke-linejoin="miter"
+            stroke-width="2.6"
+            viewBox="0 0 50 40"
+          >
+            <path
+              d="M21 6H9l-4 4v6l4 4h8l4 4v6l-4 4H5M29 34V6h10l5 5v8l-5 5H29"
+            ></path></svg
+          ><span class="brand-name">Subham Panigrahi</span></a
         >
         <div class="nav-links" id="navigation">
           <a href="index.html#work">Work</a><a href="index.html#about">About</a
@@ -28,7 +39,7 @@
           ><a href="contact.html"
             >Contact
             <span
-              ><svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24">
+              ><svg aria-hidden="true" class="ui-icon" viewBox="0 0 24 24">
                 <path d="M5 19 19 5M5 5h14v14"></path></svg></span
           ></a>
         </div>
@@ -38,7 +49,7 @@
             class="icon-button"
             id="themeToggle"
           >
-            <svg aria-hidden="true" viewbox="0 0 24 24">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
               <path d="M20 15.5A9 9 0 0 1 8.5 4 9 9 0 1 0 20 15.5Z"></path>
             </svg></button
           ><button
@@ -48,7 +59,7 @@
             class="icon-button menu-toggle"
             id="menuToggle"
           >
-            <svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24">
+            <svg aria-hidden="true" class="ui-icon" viewBox="0 0 24 24">
               <path d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
@@ -62,18 +73,19 @@
             <span class="dot"></span> DEVELOPER · COMPUTER SCIENCE STUDENT
           </p>
           <h1>
-            Thoughtful code.<br /><span class="serif">Useful experiences.</span>
+            Web applications,<br /><span class="serif">from end to end.</span>
           </h1>
           <p class="hero-intro">
-            Hi, I’m <strong>Subham Panigrahi.</strong> I build full-stack web
-            applications and explore machine learning, turning ideas into
-            practical, responsive software.
+            I’m <strong>Subham Panigrahi</strong>, a Computer Science student
+            building full-stack applications and exploring applied machine
+            learning. My work spans responsive interfaces, backend APIs, and
+            data-driven tools.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#work"
               >Explore my work
               <span
-                ><svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24">
+                ><svg aria-hidden="true" class="ui-icon" viewBox="0 0 24 24">
                   <path d="M5 5l14 14M5 19h14V5"></path></svg></span></a
             ><a
               class="button"
@@ -81,7 +93,7 @@
               href="assets/Subham-Panigrahi-Resume.pdf"
               >Download résumé
               <span
-                ><svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24">
+                ><svg aria-hidden="true" class="ui-icon" viewBox="0 0 24 24">
                   <path d="M12 3v18m-7-7 7 7 7-7"></path></svg></span
             ></a>
           </div>
@@ -90,30 +102,34 @@
             2027
           </p>
         </div>
-        <aside class="profile-card">
-          <div class="card-top">
-            <span class="eyebrow">A LITTLE ABOUT ME</span
-            ><span class="accent"
-              ><svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24">
-                <path d="M5 19 19 5M5 5h14v14"></path></svg
-            ></span>
+        <aside aria-labelledby="focus-title" class="focus-panel">
+          <div class="focus-header">
+            <h2 id="focus-title">Focus / 01</h2>
+            <span>ODISHA, INDIA</span>
           </div>
-          <div aria-hidden="true" class="profile-monogram">
-            sp<span>.</span>
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
+          <div class="focus-entry">
+            <span class="focus-number">01</span>
+            <div>
+              <h3>Full-stack development</h3>
+              <p>Interfaces and APIs with React, Node.js, and MongoDB.</p>
+            </div>
           </div>
-          <p class="profile-label">Building with</p>
-          <p class="typed-line">
-            <span class="typed-text">React.js</span
-            ><span aria-hidden="true" class="cursor">|</span>
-          </p>
-          <div class="profile-bottom">
-            <span
-              >Full-stack development<br /><strong
-                >MERN &amp; machine learning</strong
-              ></span
-            ><span class="small-mark">&lt;/&gt;</span>
+          <div class="focus-entry">
+            <span class="focus-number">02</span>
+            <div>
+              <h3>Applied machine learning</h3>
+              <p>
+                Classification models, interactive tools, and AI-assisted
+                workflows.
+              </p>
+            </div>
+          </div>
+          <div class="focus-foot">
+            <span class="eyebrow">WORKING WITH</span>
+            <p class="typed-line">
+              <span class="typed-text">React.js</span
+              ><span aria-hidden="true" class="cursor">|</span>
+            </p>
           </div>
         </aside>
       </section>
@@ -125,7 +141,7 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">01 / SELECTED WORK</p>
-            <h2>Learning by <span class="serif">building.</span></h2>
+            <h2>Selected <span class="serif">projects.</span></h2>
           </div>
           <p>
             Three projects across intelligent applications,<br />content
@@ -279,7 +295,7 @@
                     width="22"
                   />MongoDB</span
                 ><span class="chip"
-                  ><svg aria-hidden="true" viewbox="0 0 24 24">
+                  ><svg aria-hidden="true" viewBox="0 0 24 24">
                     <path d="m8 5-7 7 7 7m8-14 7 7-7 7M14 3l-4 18"></path></svg
                   >REST APIs</span
                 >
@@ -292,9 +308,7 @@
         <div class="container about-grid">
           <div>
             <p class="eyebrow">02 / ABOUT ME</p>
-            <h2>
-              Curiosity drives<br />the <span class="serif">next commit.</span>
-            </h2>
+            <h2>A little <span class="serif">background.</span></h2>
           </div>
           <div>
             <p class="lead">
@@ -316,7 +330,7 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">03 / THE TOOLKIT</p>
-            <h2>Tools behind <span class="serif">the work.</span></h2>
+            <h2>Tools I <span class="serif">work with.</span></h2>
           </div>
         </div>
         <div class="toolkit-toolbar">
@@ -328,7 +342,7 @@
             id="toolkitMotion"
             type="button"
           >
-            <svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24">
+            <svg aria-hidden="true" class="ui-icon" viewBox="0 0 24 24">
               <path d="M9 5v14M15 5v14"></path></svg
             ><span>Pause motion</span>
           </button>
@@ -498,7 +512,7 @@
                   ><span aria-hidden="true" class="tech-dot"></span>
                 </li>
                 <li class="tech-card">
-                  <svg aria-hidden="true" viewbox="0 0 24 24">
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
                     <path d="m8 5-7 7 7 7m8-14 7 7-7 7M14 3l-4 18"></path></svg
                   ><span class="tech-label"
                     ><strong>REST APIs</strong
@@ -622,8 +636,7 @@
           </div>
         </div>
         <p class="toolkit-caption">
-          <span class="dot"></span> Built with curiosity. Refined through
-          practice.
+          Languages, frameworks, and tools used across my projects.
         </p>
         <section aria-labelledby="learning-title" class="learning-section">
           <div class="learning-heading">
@@ -640,7 +653,7 @@
           </div>
           <div class="learning-grid">
             <article class="learning-card">
-              <svg aria-hidden="true" viewbox="0 0 24 24">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
                 <path
                   d="M9 3h6v6H9zM3 15h6v6H3zm12 0h6v6h-6zM12 9v3M6 15v-3h12v3"
                 ></path>
@@ -652,7 +665,7 @@
               </div>
             </article>
             <article class="learning-card">
-              <svg aria-hidden="true" viewbox="0 0 24 24">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
                 <path
                   d="M9 3h6v6H9zM3 15h6v6H3zm12 0h6v6h-6zM12 9v3M6 15v-3h12v3"
                 ></path>
@@ -664,7 +677,7 @@
               </div>
             </article>
             <article class="learning-card">
-              <svg aria-hidden="true" viewbox="0 0 24 24">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
                 <path
                   d="M9 3h6v6H9zM3 15h6v6H3zm12 0h6v6h-6zM12 9v3M6 15v-3h12v3"
                 ></path>
@@ -676,7 +689,7 @@
               </div>
             </article>
             <article class="learning-card">
-              <svg aria-hidden="true" viewbox="0 0 24 24">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
                 <path
                   d="M9 3h6v6H9zM3 15h6v6H3zm12 0h6v6h-6zM12 9v3M6 15v-3h12v3"
                 ></path>
@@ -688,7 +701,7 @@
               </div>
             </article>
             <article class="learning-card">
-              <svg aria-hidden="true" viewbox="0 0 24 24">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
                 <path
                   d="M9 3h6v6H9zM3 15h6v6H3zm12 0h6v6h-6zM12 9v3M6 15v-3h12v3"
                 ></path>
@@ -700,7 +713,7 @@
               </div>
             </article>
             <article class="learning-card">
-              <svg aria-hidden="true" viewbox="0 0 24 24">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
                 <path
                   d="M9 3h6v6H9zM3 15h6v6H3zm12 0h6v6h-6zM12 9v3M6 15v-3h12v3"
                 ></path>
@@ -712,7 +725,7 @@
               </div>
             </article>
             <article class="learning-card">
-              <svg aria-hidden="true" viewbox="0 0 24 24">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
                 <path
                   d="M9 3h6v6H9zM3 15h6v6H3zm12 0h6v6h-6zM12 9v3M6 15v-3h12v3"
                 ></path>
@@ -724,7 +737,7 @@
               </div>
             </article>
             <article class="learning-card">
-              <svg aria-hidden="true" viewbox="0 0 24 24">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
                 <path
                   d="M9 3h6v6H9zM3 15h6v6H3zm12 0h6v6h-6zM12 9v3M6 15v-3h12v3"
                 ></path>
@@ -748,7 +761,7 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">04 / EXPERIENCE</p>
-            <h2>Learning in <span class="serif">practice.</span></h2>
+            <h2>Internships <span class="serif">&amp; training.</span></h2>
           </div>
         </div>
         <div class="timeline">
@@ -886,26 +899,40 @@
         </p>
         <a class="button primary" href="contact.html"
           >Start a conversation
-          <svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24">
+          <svg aria-hidden="true" class="ui-icon" viewBox="0 0 24 24">
             <path d="M5 19 19 5M5 5h14v14"></path></svg
         ></a>
       </section>
     </main>
     <footer class="container">
-      <a class="brand" href="index.html">sp<span class="accent">.</span></a>
-      <p>© <span id="year">2026</span> Subham Panigrahi</p>
+      <a aria-label="Subham Panigrahi — home" class="brand" href="index.html"
+        ><svg
+          aria-hidden="true"
+          class="brand-mark"
+          fill="none"
+          stroke="currentColor"
+          stroke-linejoin="miter"
+          stroke-width="2.6"
+          viewBox="0 0 50 40"
+        >
+          <path
+            d="M21 6H9l-4 4v6l4 4h8l4 4v6l-4 4H5M29 34V6h10l5 5v8l-5 5H29"
+          ></path></svg
+        ><span class="brand-name">Subham Panigrahi</span></a
+      >
+      <p>© <span id="year">2026</span></p>
       <div>
         <a href="https://github.com/coder21-sp"
           >GitHub
-          <svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24">
+          <svg aria-hidden="true" class="ui-icon" viewBox="0 0 24 24">
             <path d="M5 19 19 5M5 5h14v14"></path></svg></a
         ><a href="https://www.linkedin.com/in/subham-panigrahi28/"
           >LinkedIn
-          <svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24">
+          <svg aria-hidden="true" class="ui-icon" viewBox="0 0 24 24">
             <path d="M5 19 19 5M5 5h14v14"></path></svg></a
         ><a href="mailto:subhampanigrahi2004@gmail.com"
           >Email
-          <svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24">
+          <svg aria-hidden="true" class="ui-icon" viewBox="0 0 24 24">
             <path d="M5 19 19 5M5 5h14v14"></path></svg
         ></a>
       </div>
