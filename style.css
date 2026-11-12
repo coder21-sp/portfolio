@@ -275,7 +275,7 @@ header {
   color: var(--muted);
 }
 .section {
-  padding-block: 90px;
+  padding-block: 72px;
 }
 .section-heading {
   display: flex;
@@ -1340,7 +1340,7 @@ footer .brand {
 .hero {
   grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
   gap: 80px;
-  padding-block: 100px 90px;
+  padding-block: 80px 72px;
   align-items: center;
 }
 .hero h1 {
